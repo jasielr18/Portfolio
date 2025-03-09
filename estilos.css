@@ -1,0 +1,465 @@
+
+/*Esto se utiliza para seleccionar y editar todo*/
+/* *{
+
+  margin: 0px ;  Esto es para darle mas espacio al exterior
+   padding: 0px ;  Esto es para darle mas espacio al interior
+
+}  */
+
+
+
+/*///////////////////// STYLE FOR INDEX /////////////////////////*/
+
+body{
+ 
+
+ background-color: #000000;
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0; /* Remove default margin */
+ padding: 0; /* Remove default padding */
+ height: 100vh; /* Full viewport height */
+ display: flex; /* Use flexbox */
+ justify-content: center; /* Center horizontally */
+
+}
+
+
+#titulo{
+
+
+  font-size: 20;
+  color: rgb(19, 160, 19);
+  padding-right: 0px;
+  margin-right: 400px;
+  margin-left: 20px;
+  font-family: 'monospace';
+
+}
+
+/* Esto se utiliza para identificar un id*/
+#container{
+
+  
+
+width: 1200px;
+/*border: 3px solid black;*/
+margin: 0px auto; 
+justify-content: center; /* Center horizontally */
+display: flex; /* Use flexbox */
+
+}
+
+header{
+  
+  line-height: 50px; /* Esto es para llevar la el texto al centro*/
+  text-align: center; /* This is what makes the content go to the center*/
+  height: 200x;
+  width:  1100px;
+  
+  
+}
+
+.top-menu {
+  list-style-type: none; /* This is line is to make sure that the list isn't going to have any dots or sometime to identify that is a list*/
+  padding: 0; /* This one is to make sure that they will be togheter */
+  margin: 0;
+  display: flex;
+}
+
+.top-menu li {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+ 
+
+}
+
+.top-menu a:hover {
+  background-color: rgb(4, 224, 4);;
+  list-style: none;
+  padding: 15px;
+  color: #000000;
+}
+
+header {
+  
+  background-color: #1d1d1d;
+  padding-top: 0%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: white;
+}
+
+#My-work {
+    
+  font: small-caps 100%/200% serif;
+    margin-left: 100px;
+    margin-top: 120px;
+    color: white;
+   
+ }
+
+ .Projects {
+
+     margin-top: 0px;
+
+ }
+
+ nav[class="Projects"] li { /* This line is used to help me to select all of the <li> in the specific nav that has the class called: "Projects".  */
+  padding: 1px;
+  list-style: none;
+  font-weight: bold; /* Example style */
+
+}
+
+.horizontal-list {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap;  
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  
+  margin-top: 30px; /* Remove default margin */
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+img {
+     
+    margin-bottom: 10px;
+    border-color: #3dad21d5;
+    border-style:solid;
+    border-width: 1px;
+    width: 300px; /* Makes the image take the full width of its parent */
+    height: 300px; /* Maintains the aspect ratio */
+    margin-right: 50px;
+    transition: transform 0.3s ease; /* Smooth transition */
+  
+}
+
+.hover-image {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.hover-image:hover {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+p {
+
+   
+   color: #3dad21d5;
+   margin-top: 0px;
+ 
+}
+
+h1 {
+
+  text-align: left;
+ color:white;
+ justify-content: center;
+ display: flex;
+ 
+}
+
+footer {
+
+ color: white;
+ justify-content: center;
+ display: flex;
+ box-sizing: border-box;
+ margin-bottom: 0%;
+ 
+}
+
+/*///////////////////// STYLE FOR CALCULATOR /////////////////////////*/
+
+
+
+
+ #Calculator {
+  padding: 0px;
+  margin: 0px;
+  /* height: 100vh; */
+  display: flexbox;
+  font-family: Arial, sans-serif;
+  
+   border: circle;
+   border: 0.1px;
+   border-color: hsl(0, 0%, 50%);
+   border-style: solid;
+   border-radius: 5px;
+   background-color: hsl(0, 0%, 10%);
+   max-width: 400px;
+
+
+border: 2px solid #333;
+overflow: hidden; /* Prevent content from overflowing (hides overflow) */
+box-sizing: border-box; /* Ensures padding and border are included in the element's total size */
+
+}
+      
+   
+
+
+
+   
+
+.center-calculator {
+margin-top: 30px;
+display: flex;
+justify-content: center;
+
+}
+
+#keys{
+display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 0.3fr);
+  gap: 5px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 6%);
+ 
+}
+
+#keys button {
+
+margin-left: 10px;
+font-size: 30px;
+height: 70px;
+ width: 70px;
+ margin-bottom: 10px;
+ border-radius: 50px;
+ border: none;
+ color: white;
+ background-color: hsl(0, 0%, 26%);
+}
+
+#keys button:hover{
+
+   background-color: hsl(0, 0%, 40%);
+
+}
+
+
+
+#display {
+
+ 
+ 
+  font-size: 3rem;
+  background-color: hsl(0, 0%, 10%);
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: aliceblue;
+  
+
+} 
+
+#keys .operators {
+   
+   background-color: hsl(35, 90%, 47%);
+   
+}
+
+
+
+/*///////////////////// STYLE FOR POMODORO TIMER /////////////////////////*/
+
+#PomodoroH1{
+
+  margin-top: 50px;
+}
+
+#pomodoro:hover{
+
+  background-color: hsla(0, 99%, 40%, 0.521);
+  color: black;
+  border-radius: 5px;
+
+}
+#shortBreak:hover{
+
+  background-color: rgb(0, 124, 128);
+  color: black;
+  border-radius: 5px;
+
+}
+
+#longBreak:hover{
+
+  background-color: rgba(0, 55, 128, 0.911);
+  color: black;
+  border-radius: 5px;
+
+}
+
+#PomodoroMenu {
+ 
+  
+ 
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  
+ 
+  }
+
+  /* #PomodoroMenu button{
+    
+    margin-top: 50px;
+    margin-right: 6px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size:21px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    border:none;
+    background: none;
+
+  } */
+
+  #pomodoro{
+
+    margin-top: 50px;
+    margin-right: 6px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size:21px;
+     font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: bold;
+    border:none;
+    background: none;
+  }
+  #shortBreak{
+
+    margin-top: 50px;
+    margin-right: 6px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size:21px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    border:none;
+    background: none;
+  }
+  #longBreak{
+
+    margin-top: 50px;
+    margin-right: 6px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    font-size:21px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    border:none;
+    background: none;
+  }
+
+  #pomodoro.pressed{
+
+    background-color: hsla(0, 62%, 30%, 0.753);
+    color: black;
+    border-radius: 5px;
+        
+        
+  
+    }
+  
+    #shortBreak.pressed{
+  
+  background-color: rgb(0, 124, 128);
+  color: black;
+  border-radius: 5px;
+
+          
+    
+      }
+      #longBreak.pressed{
+  
+        background-color: rgba(0, 55, 128, 0.911);
+  color: black;
+  border-radius: 5px;
+            
+      
+        }
+
+  #pomodoroBody{
+
+    /* hsla(120, 100%, 25%, 0.212) */
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-bottom: 10cm;
+    margin-top: 50px;
+    border: white 1px;
+    border-style: none;
+    border-radius: 15px;
+    background-color:hsl(0, 0%, 20%);
+  }
+
+  #countDown{
+
+    color: white;
+    margin-left: 80px;
+    margin-top: 5px;
+    font-size: 110px;
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    justify-content: center; /* Center horizontally */
+    width: 100%;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+    box-sizing: border-box;
+    
+  }
+
+ .my-button {
+
+    color: white;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 40px;
+    justify-content: center; /* Center horizontally */
+    background-color: rgba(60, 105, 31, 0.425);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    transition: background-color 0.5s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    
+  }
+
+  
+
+    /* Estilo cuando el botón ha sido presionado */
+    .my-button.pressed {
+      background-color: rgba(255, 0, 0, 0.363); /* Cambia el color de fondo */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+      border: none;
+      
+    }
+
+    
