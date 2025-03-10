@@ -304,9 +304,6 @@ ringTone.addEventListener('ended', () => {
     }
 });
 
-
-
-
 function updateCountdown() {
     // Si el tiempo ha llegado a 0, actualizamos el display y detenemos el intervalo.
     if (time === 0) {
@@ -374,10 +371,6 @@ shortBreakButton.addEventListener('click', function(){
    isRunning = false;
     currentMode = 'shortBreak';
     time = durations[currentMode];
-    
-
-
-   
 
 })
 
