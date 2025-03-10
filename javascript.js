@@ -245,6 +245,8 @@ function startTimer() {
 
 */
 
+
+
 const audio = new Audio('');
 audio.src = "./Sonidos/219069__annabloom__click1.wav";
 
@@ -260,7 +262,7 @@ countDown.innerHTML = "25:00"
 
 const durations = {
     pomodoro: 25 * 60,    // 25 minutos
-    shortBreak: 5 * 60,   // 5 minutos
+    shortBreak: 0.1 * 60,   // 5 minutos
     longBreak: 15 * 60    // 15 minutos
 };
 
@@ -389,3 +391,29 @@ LongBreakButton.addEventListener('click', function(){
 
 
 })
+
+function updateCountdown() {
+    // Si el tiempo ha llegado a 0, actualizamos el display y detenemos el intervalo.
+    if (time === 0) {
+        countDown.innerHTML = "0:00";
+        document.title = "⏰ ¡Tiempo terminado!";
+        clearInterval(intervalId);
+        ringTone.play();
+
+        startButton.classList.add('pressed');
+        startButton.innerHTML = "Start";
+        isRunning = false;
+    } else {
+        // Convertir los segundos restantes en minutos y segundos
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        let formattedTime = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+
+        // Actualizar la pantalla y el título de la pestaña
+        countDown.innerHTML = formattedTime;
+        document.title = `⏳ ${formattedTime} - Pomodoro`;
+
+        // Disminuir el tiempo restante
+        time--;
+    }
+}
