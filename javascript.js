@@ -251,7 +251,7 @@ const audio = new Audio('');
 audio.src = "./Sonidos/219069__annabloom__click1.wav";
 
 const ringTone = new Audio('');
-ringTone.src = "./Sonidos/Ringtone-foofaraw.wav";
+ringTone.src = "./Sonidos/Chachachá.mp3";
 
 let startButton = document.getElementById('startButton');
 let countDown = document.getElementById('countDown');
@@ -262,7 +262,7 @@ countDown.innerHTML = "25:00"
 
 const durations = {
     pomodoro: 25 * 60,    // 25 minutos
-    shortBreak: 5 * 60,   // 5 minutos
+    shortBreak: 0.1 * 60,   // 5 minutos
     longBreak: 15 * 60    // 15 minutos
 };
 
@@ -339,6 +339,9 @@ pomodoroButton.classList.add('pressed');
 
 pomodoroButton.addEventListener('click', function(){
 
+    ringTone.pause();  
+    ringTone.currentTime = 0;  
+
 clearInterval(intervalId);
  pomodoroButton.classList.add('pressed');
  shortBreakButton.classList.remove('pressed');
@@ -360,8 +363,9 @@ clearInterval(intervalId);
 
 
 shortBreakButton.addEventListener('click', function(){
-
     
+    ringTone.pause();  
+ringTone.currentTime = 0;  
     shortBreakButton.classList.add('pressed');
     pomodoroButton.classList.remove('pressed');
     LongBreakButton.classList.remove('pressed');
@@ -378,6 +382,8 @@ shortBreakButton.addEventListener('click', function(){
 
 LongBreakButton.addEventListener('click', function(){
 
+    ringTone.pause();  
+ringTone.currentTime = 0;  
     LongBreakButton.classList.add('pressed');
     shortBreakButton.classList.remove('pressed');
     pomodoroButton.classList.remove('pressed');
