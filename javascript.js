@@ -262,7 +262,7 @@ countDown.innerHTML = "25:00"
 
 const durations = {
     pomodoro: 25 * 60,    // 25 minutos
-    shortBreak: 0.1 * 60,   // 5 minutos
+    shortBreak: 5 * 60,   // 5 minutos
     longBreak: 15 * 60    // 15 minutos
 };
 
@@ -411,7 +411,7 @@ function updateCountdown() {
 
         // Actualizar la pantalla y el título de la pestaña
         countDown.innerHTML = formattedTime;
-        document.title = `⏳ ${formattedTime} - Pomodoro`;
+        document.title = ` ${formattedTime} - Pomodoro`;
 
         // Disminuir el tiempo restante
         time--;
